@@ -87,20 +87,35 @@
                 <p class="mb-5">Find the best <a href="" target="_blank"></a></p>
                 <form action="#">
                   <div class="form-group d-flex">
-                    <input id="input" type="text" class="form-control" placeholder="Enter your place ">
-                    <input id="destination" type="text" class="form-control" placeholder="Destination">
+                    <input id="placeInput" type="text" class="form-control" placeholder="Enter your place ">
+                  </div>
+                  <div class="form-group d-flex">
+                    <input id="destinationInput" type="text" class="form-control" placeholder="Destination">
 
+                  </div>
+                  <div class="form-group d-flex">
+                    <select id="timeOfDay">
+                      <option value="">Select time</option>
+                      <option value="earlyMorning">Early Morning</option>
+                      <option value="morning">Morning</option>
+                      <option value="afternoon">Afternoon</option>
+                      <option value="evening">Evening</option>
+                      <option value="night">Night</option>
+                      <option value="lateNight">Late Night</option>
+                  </select>
                     <input type="submit" class="btn btn-primary text-white px-4" onclick = "findBus()" value="Search">
                   </div>
+                  
                 </form>
-                <div style="color: black; font-size: 20px ; font-weight: bold; margin-top: 20px; margin-bottom: 20px; align-items: center;" id="result"></div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      
+      <div style="color: black; font-size: 20px ; font-weight: bold;  align-items: center; justify-content: center; width: 100% ; height: 100% ; padding: 10px;  background-color: #f2f2f2" id="result"></div>
+
 
     <div class="site-footer" id="contact-section">
       <div class="container">
