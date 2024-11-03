@@ -302,6 +302,24 @@ h1, h2, h3, h4, h5,
 .bg-black {
   background: #000; }
 
+  #startSuggestions, #destinationSuggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
 .form-control {
   height: 55px;
   border-radius: 30px;

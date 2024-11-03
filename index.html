@@ -85,23 +85,36 @@
               <div class="col-lg-6">
                 <h1>Find Your Perfect Time For Your Bus</h1>
                 <p class="mb-5">Find the best <a href="" target="_blank"></a></p>
+               
                 <form action="#">
+                  
                   <div class="form-group d-flex">
-                    <input id="placeInput" type="text" class="form-control" placeholder="Enter your place ">
+                   <input id="placeInput" type="text"  oninput="showSuggestions('placeInput', 'placeSuggestions')" class="form-control" placeholder="Enter your place ">
+                   <div id="placeSuggestions" class="suggestions" style="  color: black; border: 1px solid #ccc;
+                    max-height: 150px;
+                    overflow-y: auto;
+                    position: absolute;
+                    background-color: white;
+                    width: 200px;"></div> 
                   </div>
+
+                  
+                  
                   <div class="form-group d-flex">
-                    <input id="destinationInput" type="text" class="form-control" placeholder="Destination">
+                    <input id="destinationInput" type="text" oninput="showSuggestions('destinationInput', 'destinationSuggestions')" class="form-control" placeholder="Destination">
+                    <div id="destinationSuggestions" class="suggestions" style="background-color: #ffffff; color: black;" ></div>
 
                   </div>
+
                   <div class="form-group d-flex">
                     <select id="timeOfDay">
                       <option value="">Select time</option>
-                      <option value="earlyMorning">Early Morning</option>
-                      <option value="morning">Morning</option>
-                      <option value="afternoon">Afternoon</option>
-                      <option value="evening">Evening</option>
-                      <option value="night">Night</option>
-                      <option value="lateNight">Late Night</option>
+                      <option value="earlyMorning">04:00 AM - 07:59 AM</option>
+                      <option value="morning">08:00 AM - 11:59 AM</option>
+                      <option value="afternoon">12:00 PM - 03:59 PM</option>
+                      <option value="evening">04:00 PM - 07:59 PM</option>
+                      <option value="night">08:00 PM - 11:59 PM</option>
+                      <option value="lateNight">12:00 AM - 03:59 AM</option>
                   </select>
                     <input type="submit" class="btn btn-primary text-white px-4" onclick = "findBus()" value="Search">
                   </div>
