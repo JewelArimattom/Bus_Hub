@@ -137,7 +137,9 @@ const busCollection = [
 
 ///auto suggestion
 
-const options = ["Pala", "Thodupuzha", "Muvattupuzha", "Pravithanam", "Erattupetta", "Cherpunkal", "Ponkunnam", "Collage Padi", "Panackapalam", "Ullanad", "Nariyanganam", "Kottayam","Plassnal",];
+const options = ["Pala", "Thodupuzha", "Muvattupuzha", "Pravithanam",
+     "Erattupetta", "Cherpunkal", "Ponkunnam", "Collage Padi", "Panackapalam", 
+     "Ullanad", "Nariyanganam", "Kottayam","Plassnal",];
 
 function showSuggestions(inputId, suggestionsDivId) {
     const input = document.getElementById(inputId);
@@ -183,12 +185,12 @@ function findBus() {
 
     // Define time ranges for each time of day category
     const timeRanges = {
-        earlyMorning: { start: "04:00", end: "07:59" },
-        morning: { start: "08:00", end: "11:59" },
-        afternoon: { start: "12:00", end: "15:59" },
-        evening: { start: "16:00", end: "19:59" },
-        night: { start: "20:00", end: "23:59" },
-        lateNight: { start: "00:00", end: "03:59" }
+        earlyMorning: { start: "06:00", end: "10:59" },
+        morning: { start: "11:00", end: "15:59" },
+        afternoon: { start: "16:00", end: "20:59" },
+        evening: { start: "21:00", end: "1:59" },
+        night: { start: "02:00", end: "05:59" },
+        //lateNight: { start: "00:00", end: "03:59" }
     };
 
     // Filter buses where both starting place and destination exist in the schedule and are in the correct order
