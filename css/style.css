@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5,
 
 .form-control {
   height: 55px;
-  border-radius: 30px;
+  border-radius: 20px;
   background: #fff !important;
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {

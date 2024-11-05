@@ -177,8 +177,8 @@ function showSuggestions(inputId, suggestionsDivId) {
 
 
 //find bus
-
 function findBus() {
+    window.location.href = "busList.html";
     const place = document.getElementById("placeInput").value.toLowerCase();
     const destination = document.getElementById("destinationInput").value.toLowerCase();
     const timeOfDay = document.getElementById("timeOfDay").value;
@@ -213,7 +213,8 @@ function findBus() {
         return true;  // Return true if no time filtering is needed
     });
 
-    displayResult(result, place, destination);
+    localStorage.setItem("busResults", JSON.stringify(result));
+            window.location.href = "result.html";
 }
 
 function isTimeWithinRange(busTime, startTime, endTime) {
@@ -237,7 +238,7 @@ function convertTo24HourFormat(time) {
     return `${hours}:${minutes}`;
 }
 
-function displayResult(result, place, destination) {
+/*function displayResult(result, place, destination) {
     const resultDiv = document.getElementById("result");
     if (result.length > 0) {
         resultDiv.innerHTML = result.map(bus => {
@@ -255,4 +256,4 @@ function displayResult(result, place, destination) {
     } else {
         resultDiv.innerHTML = "<p>No buses found for this route and time.</p>";
     }
-}
+}*/

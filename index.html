@@ -89,25 +89,26 @@
                 <form action="#">
                   
                   <div class="form-group d-flex">
-                   <input id="placeInput" type="text"  oninput="showSuggestions('placeInput', 'placeSuggestions')" class="form-control" placeholder="Enter your place ">
+                   <input id="placeInput" type="text" style="color: black;"  oninput="showSuggestions('placeInput', 'placeSuggestions')" class="form-control" placeholder="Enter your place ">
                    <div id="placeSuggestions" class="suggestions" style="  color: black; border: 1px solid #ccc;
                     max-height: 150px;
                     overflow-y: auto;
                     position: absolute;
                     background-color: white;
-                    width: 200px;"></div> 
+                    width: 200px;
+                    border-color: #ffffff;"></div> 
                   </div>
 
                   
                   
                   <div class="form-group d-flex">
-                    <input id="destinationInput" type="text" oninput="showSuggestions('destinationInput', 'destinationSuggestions')" class="form-control" placeholder="Destination">
-                    <div id="destinationSuggestions" class="suggestions" style="background-color: #ffffff; color: black;" ></div>
+                    <input id="destinationInput" style="color: black;" type="text" oninput="showSuggestions('destinationInput', 'destinationSuggestions')" class="form-control" placeholder="Destination">
+                    <div id="destinationSuggestions" class="suggestions" style= "border-color: #ffffff; background-color: #ffffff; color: black;" ></div>
 
                   </div>
 
                   <div class="form-group d-flex">
-                    <select id="timeOfDay">
+                    <select id="timeOfDay" style="border: none;">
                       <option value="">Select time</option>
                       <option value="earlyMorning">06:00 AM - 11:00 AM</option>
                       <option value="morning">11:00 AM - 04:00 PM</option>
@@ -116,7 +117,8 @@
                       <option value="night">02:00 AM - 06:00 AM</option>
                       
                   </select>
-                    <input type="submit" class="btn btn-primary text-white px-4" onclick = "findBus()" value="Search">
+                  
+                    <input type="button"  class="btn btn-primary text-white px-4" onclick = "findBus()" value="Search" >
                   </div>
                   
                 </form>
@@ -127,7 +129,6 @@
         </div>
       </div>
 
-      <div style="color: black; font-size: 20px ; font-weight: bold;  align-items: center; justify-content: center; width: 100% ; height: 100% ; padding: 10px;  background-color: #f2f2f2" id="result"></div>
 
 
     <div class="site-footer" id="contact-section">
