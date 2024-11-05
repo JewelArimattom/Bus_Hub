@@ -1,0 +1,35 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Results</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Available Buses</h1>
+    <div id="result"></div>
+    <a href="index.html">Back to Search</a>
+
+    <script>
+        const result = JSON.parse(localStorage.getItem("busResults"));
+        const resultDiv = document.getElementById("result");
+
+        if (result && result.length > 0) {
+            resultDiv.innerHTML = result.map(bus => `
+                <p><strong>${bus.name}</strong></p>
+                <ul>
+                    ${bus.schedule.map(stop => `<li>${stop.stop} at ${stop.time}</li>`).join('')}
+                </ul>
+            `).join('');
+        } else {
+            resultDiv.innerHTML = "<p>No buses found for this route and time.</p>";
+        }
+
+        // Clear the storage after displaying results
+        localStorage.removeItem("busResults");
+    </script>
+</body>
+</html>
