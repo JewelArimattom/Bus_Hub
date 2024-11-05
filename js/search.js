@@ -178,7 +178,7 @@ function showSuggestions(inputId, suggestionsDivId) {
 
 //find bus
 function findBus() {
-    window.location.href = "busList.html";
+   
     const place = document.getElementById("placeInput").value.toLowerCase();
     const destination = document.getElementById("destinationInput").value.toLowerCase();
     const timeOfDay = document.getElementById("timeOfDay").value;
@@ -238,22 +238,4 @@ function convertTo24HourFormat(time) {
     return `${hours}:${minutes}`;
 }
 
-/*function displayResult(result, place, destination) {
-    const resultDiv = document.getElementById("result");
-    if (result.length > 0) {
-        resultDiv.innerHTML = result.map(bus => {
-            const startIndex = bus.schedule.findIndex(entry => entry.stop.toLowerCase() === place);
-            const endIndex = bus.schedule.findIndex(entry => entry.stop.toLowerCase() === destination);
 
-            const routeSegment = bus.schedule.slice(startIndex, endIndex + 1);
-            return `
-                <p><strong>${bus.name}</strong></p>
-                <ul>
-                    ${routeSegment.map(stop => `<li>${stop.stop} at ${stop.time}</li>`).join('')}
-                </ul>
-            `;
-        }).join('');
-    } else {
-        resultDiv.innerHTML = "<p>No buses found for this route and time.</p>";
-    }
-}*/
