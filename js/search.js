@@ -144,24 +144,111 @@ const busCollection = [
   { 
       name: "SAVIO", 
       schedule: [
-          { stop: "Pala", time: "1:00 PM" },
-          { stop: "Pravithanam", time: "2:00 PM" },
-          { stop: "Kollapally", time: "3:00 PM" }
-          { stop: "Pizhaku", time: "2:00 PM" },
-          { stop: "Pravithanam", time: "2:00 PM" },
-          { stop: "Pravithanam", time: "2:00 PM" },
-          { stop: "Pravithanam", time: "2:00 PM" },
+          { stop: "Pala", time: "1:00 AM" },
+          { stop: "Pravithanam", time: "1:00 AM" },
+          { stop: "Kollapally", time: "1:00 AM" }
+          { stop: "Pizhaku", time: "1:00 AM" },
+          { stop: "Nellappara", time: "1:00 AM" },
+          { stop: "Kolani", time: "1:00 AM" },
+          { stop: "Thodupuzha", time: "1:00 AM" },
     ] 
   },
   
   { 
-      name: "EMIK", 
-      schedule: [
-          { stop: "Pala", time: "1:00 PM" },
-          { stop: "Thodupuzha", time: "2:00 PM" },
-          { stop: "Muvattupuzha", time: "3:00 PM" }
-    ] 
-  },
+    name: "SAKTHI", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+{ 
+    name: "ODIYAN", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+{ 
+    name: "THACHUPARAMBIL", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+{ 
+    name: "SHALOM", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+
+{ 
+    name: "MARYMATHA", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+
+{ 
+    name: "TOOFAN", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+
+{ 
+    name: "ST ANTONYS", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Pravithanam", time: "1:00 AM" },
+        { stop: "Kollapally", time: "1:00 AM" }
+        { stop: "Pizhaku", time: "1:00 AM" },
+        { stop: "Nellappara", time: "1:00 AM" },
+        { stop: "Kolani", time: "1:00 AM" },
+        { stop: "Thodupuzha", time: "1:00 AM" },
+  ] 
+},
+
+
   
   { 
       name: "EMIK", 
@@ -172,12 +259,104 @@ const busCollection = [
     ] 
   }
   
-  ];
   
+  
+/////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////
+  
+// pala-kottayam (ayarkunnam)
 
+{ 
+    name: "BLESSINGS", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ayarkunnam", time: "1:00 AM" },
+        { stop: "Manarcadu", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
+
+
+{ 
+    name: "PINKU", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ayarkunnam", time: "1:00 AM" },
+        { stop: "Manarcadu", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
+
+
+{ 
+    name: "SHALOM", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ayarkunnam", time: "1:00 AM" },
+        { stop: "Manarcadu", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
 
 /////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
+
+
+// pala-kottayam (ettumanoor)
+
+{ 
+    name: "EXPO", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ettumanoor", time: "1:00 AM" },
+        { stop: "Athirampuzha", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
+
+{ 
+    name: "MARIA", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ettumanoor", time: "1:00 AM" },
+        { stop: "Athirampuzha", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
+
+{ 
+    name: "PALAKATTU", 
+    schedule: [
+        { stop: "Pala", time: "1:00 AM" },
+        { stop: "Mutholy", time: "1:00 AM" },
+        { stop: "Cherpunkal", time: "1:00 AM" }
+        { stop: "Kidangoor", time: "1:00 AM" },
+        { stop: "Ettumanoor", time: "1:00 AM" },
+        { stop: "Athirampuzha", time: "1:00 AM" },
+        { stop: "Kottayam", time: "1:00 AM" },
+  ] 
+},
+
+
+];
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
 
 ///auto suggestion
 
